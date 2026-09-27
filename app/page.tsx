@@ -482,7 +482,7 @@ export default function Home() {
       ))}
 
       <section id="contact" style={{ order: orderOf("contact") }} className="w-full px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl rounded-[32px] bg-[#141A17] p-8 text-[#E7EAEE] shadow-[0_30px_80px_-40px_rgba(20,26,23,0.9)] sm:p-10 lg:p-14 dark:bg-[#141A17]">
+        <div className="mx-auto max-w-6xl rounded-[32px] bg-[#15171B] p-8 text-[#E7EAEE] shadow-[0_30px_80px_-40px_rgba(0,0,0,0.9)] sm:p-10 lg:p-14 dark:bg-[#15171B]">
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#9AA3AE]">Contact</p>
@@ -522,7 +522,7 @@ export default function Home() {
                   <label htmlFor="message" className="mb-2 block font-mono text-[11px] uppercase tracking-[0.12em] text-[#9AA3AE]">Message</label>
                   <textarea id="message" name="message" required placeholder="Tell me a little about what you're working on…" className="min-h-32 w-full rounded-xl border border-[#2A313B] bg-[#0F1216] px-3 py-3 text-[#E7EAEE] placeholder:text-[#9AA3AE] focus:border-[#2B45C8] focus:outline-none" />
                 </div>
-                <button type="submit" disabled={sending} className="inline-flex w-full items-center justify-center gap-3 rounded-xl bg-[#28734E] px-5 py-3 font-medium text-white transition hover:bg-[#32865D] disabled:cursor-wait disabled:opacity-70">
+                <button type="submit" disabled={sending} className="inline-flex w-full items-center justify-center gap-3 rounded-xl border border-[#3A4250] bg-[#0B0C0E] px-5 py-3 font-medium text-white transition hover:border-[#4B5563] hover:bg-[#1C2129] disabled:cursor-wait disabled:opacity-70">
                   {sending && <span aria-hidden="true" className="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white" />}
                   {sending ? "Sending…" : "Send message"}
                 </button>
